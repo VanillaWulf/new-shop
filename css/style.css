@@ -120,3 +120,15 @@ body {
     margin: 0;
 }
 
+.icon {
+    fill: white;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: orange;
+}
+
+.icon-loupe:hover {
+    opacity: 0.6;
+}
