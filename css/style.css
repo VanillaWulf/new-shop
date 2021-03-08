@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  width: 1138px;
+  width: 71%;
   margin: 0 auto;
 }
 
@@ -73,6 +73,12 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
 }
 
 .header {
@@ -104,9 +110,39 @@ body {
   margin: 0 34px 0 0;
 }
 
+@media (max-width: 1600px) {
+  .header__logo {
+    margin: 0 0 0 18px;
+  }
+}
+
+@media (max-width: 378px) {
+  .header__person-link,
+  .header__person-basket {
+    display: none;
+  }
+}
+
 .brand {
   display: flex;
   margin: 0 0 63px;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    margin: 0 0 19px;
+  }
+}
+
+.brand .brand__img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .brand .brand__img {
+    display: none;
+  }
 }
 
 .brand .brand__title {
@@ -116,6 +152,24 @@ body {
   font-style: normal;
   text-transform: uppercase;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .brand .brand__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 .brand .brand__title:before {
@@ -135,12 +189,36 @@ body {
   align-items: center;
 }
 
+@media (max-width: 375px) {
+  .brand .brand__title-wrapper {
+    min-height: 363px;
+  }
+}
+
 .brand .brand__subtitle {
   display: block;
   font-size: 37px;
   line-height: 44px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .brand .brand__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand .brand__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .brand .brand__subtitle-pink {
@@ -153,15 +231,34 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 375px) {
+  .offers .offers__list {
+    flex-direction: column;
+  }
+}
+
 .offers .offers__item {
   color: #FFF;
-  width: 360px;
+  width: 32%;
   min-height: 260px;
   background-color: #474040;
   margin: 0 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .offers .offers__item {
+    width: 32%;
+    min-height: 168px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offers .offers__item {
+    width: 100%;
+  }
 }
 
 .offers .offers__item--woman {
@@ -175,5 +272,18 @@ body {
 .offers .offers__item--accesories {
   width: 100%;
   margin: 0;
+}
+
+@media (max-width: 1600px) {
+  .header__logo {
+    margin: 0 0 0 18px;
+  }
+}
+
+@media (max-width: 378px) {
+  .header__person-link,
+  .header__person-basket {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

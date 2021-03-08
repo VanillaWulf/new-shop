@@ -1,0 +1,12 @@
+@media (max-width: 1600px) {
+    .header__logo {
+        margin: 0 0 0 18px;
+    }
+}
+
+@media (max-width: 378px) {
+    .header__person-link,
+    .header__person-basket {
+        display: none;
+    }
+}

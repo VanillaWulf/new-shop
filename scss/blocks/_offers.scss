@@ -4,16 +4,29 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
     
     .offers__item {
         color: $white;
-        width: 360px;
+        width: 32%;
         min-height: 260px;
         background-color: $brown;
         margin: 0 0 30px;
         
         @include flex-center();
+
+        @include tablet {
+            width: 32%;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
 
         &--woman {
             background-image: url(../img/woman.jpg);
